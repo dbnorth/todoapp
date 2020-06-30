@@ -17,11 +17,11 @@ jobs:
             - run: npm install
             - run: npm run build
             - name: Deploy to Server
-            - uses: easingthemes/ssh-deploy@v2.1.1
-            - env:
-                SSH_PRIVATE_KEY: ${{ secrets.SERVER_SSH_KEY }}
-                ARGS: "-rltgoDzvO --delete"
-                SOURCE: "dist/"
-                REMOTE_HOST: "todo.eaglesoftwareteam.com"
-                REMOTE_USER: ubuntu
-                TARGET: "/nodeapps/todoapp-vue"
+              uses: easingthemes/ssh-deploy@v2.1.1
+              env:
+                    SSH_PRIVATE_KEY: ${{ secrets.SERVER_SSH_KEY }}
+                    ARGS: "-rltgoDzvO --delete"
+                    SOURCE: "dist/"
+                    REMOTE_HOST: "todo.eaglesoftwareteam.com"
+                    REMOTE_USER: ubuntu
+                    TARGET: "/nodeapps/todoapp-vue"
