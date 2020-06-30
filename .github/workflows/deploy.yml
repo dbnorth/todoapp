@@ -24,4 +24,4 @@ jobs:
                     SOURCE: "dist/"
                     REMOTE_HOST: "todo.eaglesoftwareteam.com"
                     REMOTE_USER: ubuntu
-                    TARGET: "/nodeapps/todoapp-vue"
+                    TARGET: "/var/www/html/todoapp-vue"
