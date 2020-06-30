@@ -1,7 +1,7 @@
 <template>
     <div>
         <UserDisplay></UserDisplay>
-        <H1>Todo Edit List</H1>
+        <H1>Todo List Edit</H1>
         <p>{{ message }}</p>
         <h2>Editing {{ this.list.name }}</h2>
         <form @submit.prevent="updateList">
