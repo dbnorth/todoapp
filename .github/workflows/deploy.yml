@@ -1,7 +1,8 @@
 name: DEPLOY TO STAGING
 
 on:
-    [pull_request]:
+    pull_request:
+        types : [closed]
         branches:
             - develop
 
